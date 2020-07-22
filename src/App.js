@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+
+//css
 import './App.css';
 
+//component
+import Avatar from '../src/Components/Avatar/Avatar'
+import StudentInfo from '../src/Components/StudentInfo/StudentInfo'
+import TodoList from '../src/Components/TodoList/TodoList'
 function App() {
+  // state
+  let name = "David Winalda";
+  let status = "Bootcamp Student";
+  let bio = "Coding membuat saya belajar bagaimana berfikir";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App">  
+      <ul><TodoList/></ul>
+     </div>
   );
 }
 
